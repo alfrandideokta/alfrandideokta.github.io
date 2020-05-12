@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Gallery Foto</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".link_gmbr").click(function() {
+			var image=$(this).attr("href");
+			$("#gmbr_besar img").attr({src:image});
+			$("#gmbr_besar img").slideDown("slow");
+			return false;
+		});
+	$("#close").click(function(){
+		$("#gmbr_besar").slideUp("slow");
+	});
+	});
+</script>
+
+<style type="text/css">
+*{margin:0 auto; padding:0 ;}
+body {
+	text-align: center;
+	background-color: grey;
+		background-image: url(1.png);background-size: cover;background-repeat: no-repeat;background-position: center;background-attachment: fixed;
+	
+}
+
+#pembungkus{border: groove blue 5px; 
+			width:900px; 
+			height:970px; 
+			background-color: darkcyan; 
+			margin-top: 30px;}
+
+
+#header{width: 860px; 
+	height: 180px; 
+	border: groove blue 5px; 
+	text-align: right;
+	background-repeat: no-repeat; 
+	background-image:url("2.JPG"); 
+	padding-top : 30px; 
+	font-size: 30px; 
+	margin-top: 20px; 
+	margin-right: 20px; 
+	margin-left: 15px; 
+	font-family: curlz mt; 
+	color: blue;
+	font-weight: bold; }
+
+
+/*------------------Menu Horizontal------------------*/
+
+#MenuHorizontal{width: 860px; height:50px;
+				background-color: lavender; 
+				border: groove blue 5px;
+				}
+#MenuHorizontal ul{list-style: none;}
+
+#MenuHorizontal ul li {float: left; position: relative;}
+
+#MenuHorizontal ul li a{text-decoration: none;
+					 	background-color: silver;
+						display: block;
+						width: 139px; height: 33px; 
+						margin-left: 2px;
+						margin-right: 2px; 
+						margin-top: 8px;
+						margin-bottom: 8px; 
+						text-align: center; 
+						border-radius: 0px; 
+						color:deeppink;
+						font-size: 18px;
+						font-family: curlz mt;
+						font-weight: bold;}
+
+#MenuHorizontal li a:hover{background-color: blue; 
+							  color: pink; font-weight: bold;}
+
+/*------------------Sub Gallery----------*/
+#MenuHorizontal ul li ul{list-style: none; 
+						position: absolute; display: none;}
+#MenuHorizontal ul li:hover ul{display: block; position: absolute;}
+#footer{width:860px; height:40px; border:groove blue 5px; padding-top:25px; background-image:url("awan.jpg"); 
+text-align: center; background-size: cover;color: blue;font-family: broadway;}
+
+	#pembungkus1{
+	 	width: 860px; 
+	 	background-color: darkcyan;
+	 	text-align: center; 
+	 	border: groove blue 5px;
+	 	
+	}
+	#gmbr_kecil img {
+		width: 140px;
+	    height: 120px; 
+	    border: dotted 2px lavender;
+	    margin-top: 5px;
+	}
+	#gmbr_besar img {
+		width: 750px;
+	 	height: 400px;
+		border: groove 5px lavender;
+	}
+	ol { 
+		list-style: none;
+		}
+	ol li a {
+		text-decoration: none;
+	 	font-weight: bold;
+	 	color: lavender;
+	}
+</style>
+</head>
+
+<body>
+
+	<div id="pembungkus">
+	<div id="header"> ~ PANORAMA BUKIT SERELO LAHAT ~ </div>
+	<div id="MenuHorizontal">
+				<ul>
+					<li><a href="index.php?hal=home">Home</a></li>
+					<li><a href="index.php?hal=pfl">Profile</a></li>
+					<li><a href="index.php?hal=Abt">About Us</a></li>
+					<li> <a href="#">Gallery</a>
+
+						<ul>
+					
+					<li> <a href="gal.html">Foto</a></li>
+
+				</ul>
+					</li>
+					<li><a href="index.php?hal=contact">Contact</a></li>
+					<li><a href="index.php?hal=GuestBook">Guest Book</a></li>
+				</ul>
+		</div>
+	<div id="pembungkus1">
+		<div id="gmbr_kecil">
+			<ol>
+				<li>
+					<a href="a.jpg" class="link_gmbr">
+					<img src="a.jpg">
+					</a>
+					<a href="b.jpg" class="link_gmbr">
+					<img src="b.jpg">
+					</a>
+					<a href="c.jpg" class="link_gmbr">
+					<img src="c.jpg">
+					</a>
+					<a href="d.jpg" class="link_gmbr">
+					<img src="d.jpg">
+					</a>
+
+
+				</li>
+			</ol>
+		</div>
+		<div id="gmbr_besar">
+			<ol>
+				<li>
+					<img src="a.jpg">
+					<br><a href="#" id="close"> CLOSE </a>
+					<br>
+					
+				</li>
+			</ol>
+			</div>
+		</div>
+		
+		<div id="footer">
+		Copyright © Kholifah_SistemInformasi_1654B 2018
+	</div>
+	</body>
+</div>
+</body>
+</html>

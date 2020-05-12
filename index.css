@@ -1,0 +1,84 @@
+*{margin:0 auto; padding:0 ;}
+
+body {background-image: url(1.png);background-size: 
+cover;background-repeat: no-repeat;background-position: center;background-attachment: fixed;}
+
+#pembungkus{border: groove blue 5px; 
+			width:900px; 
+			height:940px; 
+			background-color: darkcyan; 
+			margin-top: 30px;}
+
+#header{width: 860px; 
+	height: 180px; 
+	border: groove blue 5px; 
+	text-align: right;
+	background-repeat: no-repeat; 
+	background-image:url("2.JPG"); 
+	padding-top : 30px; 
+	font-size: 30px; 
+	margin-top: 20px; 
+	margin-right: 20px; 
+	margin-left: 15px; 
+	font-family: cursive; 
+	color: blue;}
+#isi{width:860px; height:535px; border: groove blue 5px; background-color: lavender; text-align: justify;}
+#footer{width:860px; height:40px; border:groove blue 5px; padding-top:25px; background-image:url("awan.jpg"); 
+text-align: center; background-size: cover;color: blue;}
+
+img{width: 170px; height: 160px; margin: 10px 5px 10px 5px; border: double 2px black; padding: 10px;}
+p {text-align: justify;text-indent: 15pt;padding: 5px; line-height: 16pt;font-size: 15px;
+	font-family: comic sans MS; }
+
+/*------------------kiri------------------*/
+.kiri #JUDULMENU{background-color: lavender;
+	text-align: center;font-weight: bold;
+	color: blue;
+	padding-top: 7px;padding-bottom: 7px;padding-bottom: groove 3px white;border-radius: 10px;}
+
+ .kiri ul {list-style: none; height: 450px;}
+
+ .kiri ul li a{background-color: silver;
+ 				display: block;
+ 				text-decoration: none;
+ 				padding: 10px;
+ 				border-bottom: 5px groove lavender;
+ 				font-weight: bold;
+ 				color:darkcyan;
+ 				font-size: 15px;}
+
+ .kiri ul li a:hover{background-color: blue; color: pink;} 
+
+/*------------------Menu Horizontal------------------*/
+
+#MenuHorizontal{width: 860px; height:50px;
+				background-color: lavender; 
+				border: groove blue 5px;
+				}
+#MenuHorizontal ul{list-style: none;}
+
+#MenuHorizontal ul li {float: left; position: relative;}
+
+#MenuHorizontal ul li a{text-decoration: none;
+					 	background-color: silver;
+						display: block;
+						width: 139px; height: 33px; 
+						margin-left: 2px;
+						margin-right: 2px; 
+						margin-top: 8px;
+						margin-bottom: 8px; 
+						text-align: center; 
+						border-radius: 0px; 
+						color:deeppink;
+						font-size: 18px;}
+
+#MenuHorizontal li a:hover{background-color: blue; 
+							  color: pink; font-weight: bold;}
+
+/*------------------Sub Gallery----------*/
+#MenuHorizontal ul li ul{list-style: none; 
+						position: absolute; display: none;}
+#MenuHorizontal ul li:hover ul{display: block; position: absolute;}
+
+.kiri{width:200px; height:530px;background-color:darkcyan;border:groove blue 2px; float:left;}
+.kanan{width:630px; height:530px;background-color:darkcyan;border:groove blue 2px; float:right;}
